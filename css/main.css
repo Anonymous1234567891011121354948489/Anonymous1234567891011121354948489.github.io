@@ -1,0 +1,40 @@
+#accordionExample {
+  margin-top: 2%;
+  margin-right: 15%;
+  margin-left: 15%;
+  font-size: 20px;
+}
+
+#header {
+  margin-left: 15%;
+  margin-top: 2%;
+  width: 50%;
+}
+
+.btn-primary{
+    position: absolute;
+    right: 50px;
+    top: 13%;
+    z-index: 100;
+    width: 150px;
+}
+
+.btn-secondary{
+    position: absolute;
+    right: 213px;
+    top: 13%;
+    z-index: 100;
+    width: 106px;
+}
+
+.btn-warning{
+    position: absolute;
+    right: 333px;
+    top: 13%;
+    z-index: 100;
+    width: 108px;
+}
+
+.accordion-header{
+    position:relative;
+}
