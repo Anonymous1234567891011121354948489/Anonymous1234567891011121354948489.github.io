@@ -63,8 +63,8 @@
             <div class="spec">
                 First, the user ApplyOnline.<br />
                 Then, he UploadsPassport, so that the company can EvaluateApplication.<br />
-                Once the company EvaluateApplication, it decides between RejectApplication or AcceptApplication.<br />
-                If they AcceptApplication, they then have to PayForFees, before PreparingAndDeliveringPassport. <br /><br />
+                Once the company has evaluated the user, it decides between RejectApplication or AcceptApplication.<br />
+                If they accept the application, they then have to PayForFees, before PreparingAndDeliveringPassport.<br /><br />
             </div>
 
             <strong>Corresponding BPMN process:<br /><br /></strong>
@@ -107,11 +107,11 @@
             <strong>Description:<br /><br /></strong>
 
             <div class="spec">
-                First, the user AppliesOnline. <br />
-                Then, in a loop necessarily the user UploadsPassport before the system ChecksQuality, and optionally the system RequiresNewUpload. <br />
-                After that, the company EvaluatesApplication. <br />
-                Then, the company either RejectApplication or AcceptApplication. <br />
-                If the company accepts, it has to PayForFees and PreparePassport, after what it DeliverPassport. <br /><br />
+                First, the user AppliesOnline.<br />
+                Then, in a loop necessarily the user has to UploadPassport so that the system can CheckQuality, and optionally the system RequireNewUpload.<br />
+                After this verification, the company EvaluatesApplication leading either to RejectApplication or AcceptApplication.<br />
+                If the company accepts the application, its administrative staff must PayForFees and PreparePassport.<br />
+                Once the passport is ready, the company DeliverPassport.<br /><br />
             </div>
 
             <strong>Corresponding BPMN process:<br /><br /></strong>
@@ -478,9 +478,9 @@
 
             <div class="spec">
                 First, the administration has to give the MissionAuthorization.<br />
-                While the user BookFlight, the administrative staff does the MissionPaperwork.<br />
-                After the booking his flight, the user is allowed to ReserveHotel, TakeInsurance, CheckLocalTransportation, and DoVaccination.<br />
-                Once he has ReserveHotel and finished his MissionPaperwork, he can start the VisaProcess.<br />
+                Then, while the user BookFlight, the administrative staff can do the MissionPaperwork.<br />
+                After booking his flight, the user is allowed to BookHotel, TakeInsurance, CheckLocalTransportation, and DoVaccination.<br />
+                Once he has booked the hotel and is done with his mission paperwork, he can start the VisaProcess.<br />
                 In the end, the administration ArchiveMission.<br /><br />
             </div>
 
